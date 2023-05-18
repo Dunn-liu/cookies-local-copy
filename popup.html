@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
+  <body>
+    <div class="content-wrap">
+      <div class="card">
+        <div class="tools">
+          <div class="circle"><span class="red box"></span></div>
+          <div class="circle"><span class="yellow box"></span></div>
+          <div class="circle"><span class="green box"></span></div>
+        </div>
+        <div class="card__content">
+          <div class="msg-wrap">
+            <p>
+              将当前地址cookies和localStorage复制到输入框内的地址（默认只复制cookies）
+            </p>
+          </div>
+          <div class="toggler-warpper">
+            <span>是否在复制成功后跳转页面</span>
+            <div class="toggler">
+              <input
+                id="toggler-checkbox"
+                name="toggler-checkbox"
+                type="checkbox"
+                checked
+              />
+              <label for="toggler-checkbox">
+                <svg
+                  class="toggler-on"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 130.2 130.2"
+                >
+                  <polyline
+                    class="path check"
+                    points="100.2,40.2 51.5,88.8 29.8,67.5"
+                  ></polyline>
+                </svg>
+                <svg
+                  class="toggler-off"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 130.2 130.2"
+                >
+                  <line
+                    class="path line"
+                    x1="34.4"
+                    y1="34.4"
+                    x2="95.8"
+                    y2="95.8"
+                  ></line>
+                  <line
+                    class="path line"
+                    x1="95.8"
+                    y1="34.4"
+                    x2="34.4"
+                    y2="95.8"
+                  ></line>
+                </svg>
+              </label>
+            </div>
+          </div>
+          <div class="toggler-warpper">
+            <span>是否同步复制localStorage</span>
+            <div class="toggler">
+              <input
+                id="toggler-checkbox1"
+                name="toggler-checkbox"
+                type="checkbox"
+              />
+              <label for="toggler-checkbox1">
+                <svg
+                  class="toggler-on"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 130.2 130.2"
+                >
+                  <polyline
+                    class="path check"
+                    points="100.2,40.2 51.5,88.8 29.8,67.5"
+                  ></polyline>
+                </svg>
+                <svg
+                  class="toggler-off"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 130.2 130.2"
+                >
+                  <line
+                    class="path line"
+                    x1="34.4"
+                    y1="34.4"
+                    x2="95.8"
+                    y2="95.8"
+                  ></line>
+                  <line
+                    class="path line"
+                    x1="95.8"
+                    y1="34.4"
+                    x2="34.4"
+                    y2="95.8"
+                  ></line>
+                </svg>
+              </label>
+            </div>
+          </div>
+          <div class="input-group">
+            <input id="url" class="input" placeholder="http://localhost""
+            autocomplete="off">
+            <input class="button--submit" id="btn" value="复制" type="submit" />
+          </div>
+        </div>
+        <div class="message">
+          <p>这是一条消息提示。</p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "cookies local copy",
+  "version": "1.0.0",
+  "description": "Copy cookies and localStorage of current address to another address",
+  "icons": {
+    "16": "images/icon.png",
+    "48": "images/icon.png",
+    "128": "images/icon.png"
+  },
+  "action": {
+    "default_icon": "images/icon.png",
+    "default_title": "Title",
+    "default_popup": "popup.html"
+  },
+  "host_permissions": ["*://*/*"],
+  "permissions": [
+    "cookies",
+    "scripting",
+    "tabs",
+    "storage",
+    "activeTab",
+    "notifications"
+  ]
+}
